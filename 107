@@ -1,0 +1,23 @@
+۷_تابع ( )min که به شکل زیر اعلان میشود را نوشته و آزمایش کنید. این تابع با استفاده از تابع (min (int , int کوچکترین عدد را از میان چهار عدد صحیح ارسال شده به آن پیدا کرده و بر می گرداند.
+int min (int, int, int, int);
+
+پاسخ:
+#include <iostream>
+using namespace std;
+
+int min(int x, int y)
+{
+    return (x < y) ? x : y;
+}
+
+int min(int a, int b, int c, int d)
+{
+    return min(min(a, b), min(c, d));
+}
+
+int main()
+{
+    cout << min(8, 3, 12, 5);
+
+    return 0;
+}
